@@ -1,0 +1,9 @@
+Name of Quantlet:    'QNAR_RS_Benchmark'
+
+Published in:        'SSRN'
+
+Description:         'This Quantlet represents the code for the benchmarking experiment described in the paper: May the course be with you!'
+
+Keywords:            'NLP, recommender, system, quantinar, benchmarking, experiment'
+
+Author[New]:         Xiaorui ZUO; Raul Cristian Bag; Wolfgang Karl Härdle

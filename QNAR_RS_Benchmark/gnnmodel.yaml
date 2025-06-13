@@ -1,0 +1,49 @@
+#seed: 12345
+#reproducibility: true
+#split_to: 5
+
+# Dataset config
+data_path: ./data/
+# One of diginetica, yoochoose, quantinar.
+dataset: quantinar
+
+#benchmark_filename: "diginetica.inter"
+############ SPECIFIC FOR DIGINETICA DATASET ############
+USER_ID_FIELD: session_id
+ITEM_ID_FIELD: item_id
+LIST_SUFFIX: _list
+ITEM_LIST_LENGTH_FIELD: item_length
+MAX_ITEM_LIST_LENGTH: 10
+TIME_FIELD: timestamp
+HEAD_ENTITY_ID_FIELD: head_id
+TAIL_ENTITY_ID_FIELD: tail_id
+RELATION_ID_FIELD: relation_id
+ENTITY_ID_FIELD: entity_id
+load_col:
+    inter: ["item_id", "session_id", "timestamp"]
+    kg: [ head_id, relation_id, tail_id ]
+    link: [ item_id, entity_id ]
+############ SPECIFIC FOR DIGINETICA DATASET ############
+
+
+# Model Configuration
+embedding_size: 256
+hidden_size: 256
+num_layers: 2  # number of layers in the LSTM
+dropout_prob: 0.01
+loss_type: 'CE'
+
+# Training and evaluation config
+epochs: 500
+train_batch_size: 4196
+eval_batch_size: 4196
+train_neg_sample_args: ~
+eval_args:
+    group_by: user
+    order: TO
+    split: {'LS': 'valid_and_test'}
+    mode: full
+metrics: [ 'Hit', 'Recall', 'Precision', 'MAP', 'NDCG', 'GiniIndex', 'AveragePopularity']
+topk: 10
+valid_metric: NDCG@10 #GiniIndex@10
+metric_decimal_place: 4

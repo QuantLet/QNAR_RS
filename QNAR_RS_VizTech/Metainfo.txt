@@ -1,0 +1,9 @@
+Name of Quantlet:    'QNAR_RS_VizTech'
+
+Published in:        'SSRN'
+
+Description:         'This Quantlet represents the code for the visualizations presented and analysed in the paper: May the course be with you!'
+
+Keywords:            'vizualization technology, recommender, system, quantinar'
+
+Author[New]:         Xiaorui ZUO; Raul Cristian Bag; Wolfgang Karl Härdle
