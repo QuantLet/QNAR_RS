@@ -7,3 +7,5 @@ Description:         'This Quantlet represents the code for model construction a
 Keywords:            'model, deep learning, pytorch, training, recommender, system, quantinar'
 
 Author[New]:         Xiaorui ZUO; Raul Cristian Bag; Wolfgang Karl Härdle
+
+Submitted:           13.06.2025
