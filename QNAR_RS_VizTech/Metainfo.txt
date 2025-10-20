@@ -7,3 +7,5 @@ Description:         'This Quantlet represents the code for the visualizations p
 Keywords:            'vizualization technology, recommender, system, quantinar'
 
 Author[New]:         Xiaorui ZUO; Raul Cristian Bag; Wolfgang Karl Härdle
+
+Submitted:           13.06.2025
